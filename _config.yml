@@ -1,0 +1,19 @@
+# site settings
+title: Cryptck
+subtitle: A texting service to monitor the BTC, ETH, and LTC price 
+email: info@cryptck.com
+description: Tell us the price changes you care about<br/>We'll text you when you need to know about it.
+url: "https://cryptck.com" # the base hostname & protocol for your site
+
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings
+twitter_url: https://twitter.com/cryptck
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed

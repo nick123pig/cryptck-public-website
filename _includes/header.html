@@ -1,0 +1,30 @@
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
+	<a href="/" class="logo" style="padding:0.5em"><img src="/assets/images/logo_small.png" alt="EthSMS"/></a>
+	<a href="/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a>
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+    {% for page in site.pages %}
+		    {% if page.layout == "home" %}
+		        <li><a href="/">{{ page.title }}</a></li>
+	    	{% endif %}
+		{% endfor %}
+		{% for page in site.pages %}
+		    {% if page.layout != "home" and page.showinnavmenu == true %}
+		        <li><a href="{{ page.url | '/' }}">{{ page.title }}</a></li>
+		    {% endif %}
+		{% endfor %}
+	</ul>
+	<ul class="actions vertical">
+		<li><a href="/get_started.html" class="button special fit">Get Started</a></li>
+	</ul>
+</nav>
