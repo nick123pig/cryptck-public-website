@@ -22,7 +22,7 @@ showinnavmenu: true
 		</ul>
 		<h2>Your Account</h2>
 		<ul>
-		<li><strong>Is this a free service?</strong><br/>Unfortunatley, we can't support the service for free (because we have to pay the bills). We give everyone 25 free credits to try the service. At the end of the trial, we hope you decide to support the expansion of cryptck by becoming a paying customer. That being said, we are pretty flexible if you feel like you need more time to decide. Just shoot us an email at <a href='mailto:info@cryptck.com'>info@cryptck.com</a> and we'll work something out with you</li>
+		<li><strong>Is this a free service?</strong><br/>Unfortunatley, we can't support the service for free (because we still have to pay the bills). We give everyone 25 free credits to try the service. At the end of the trial, we hope you decide to support the expansion of cryptck by becoming a paying customer. That being said, we are pretty flexible if you feel like you need more time to decide. Just shoot us an email at <a href='mailto:info@cryptck.com'>info@cryptck.com</a> and we'll work something out with you</li>
 		<li><strong>How do I add credits to my account?</strong><br/>Visit our <a href="/buy.html">buy credits</a> page to get a code. Once you enter your payment information, you'll receive a code. Text "add {your code}" to (323) 593-2797.</li>
 		<li><strong>Is it safe to give my credit card information?</strong><br/>Yes; we use the latest encryption technology to ensure your financial information is safe. Our payment processor is PCI certified.</li>
 		<li><strong>How do I cancel My Account?</strong><br/>Just text the word STOP to 1 (323) 593-2797 and we'll unsubscribe you from the service.</li>
