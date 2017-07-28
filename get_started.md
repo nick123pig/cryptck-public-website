@@ -2,7 +2,6 @@
 title: Get Started
 layout: landing
 description: Sign up today to step away from the charts. All we need to get you started is your phone number.
-showinnavmenu: true
 ---
 
 <!-- Main -->

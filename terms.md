@@ -2,7 +2,6 @@
 title: Terms and Conditions
 layout: post
 description: Terms and Conditions
-showinnavmenu: true
 ---
 
 <h1><a id="Terms_of_Service_1"></a>Terms of Service</h1>

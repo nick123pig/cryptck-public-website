@@ -38,8 +38,9 @@
 <div id="wrapper">
 
 <!-- Header -->
-<header id="header" class="alt">
-	<a href="/" class="logo"><strong>CRYPTCK</strong><span class="header-text">We'll watch the charts</span></a>
+<header id="header">
+	<a href="/" class="logo" style="padding:0.5em"><img src="/assets/images/logo_small.png" alt="EthSMS"/></a>
+	<a href="/" class="logo"><strong>Cryptck</strong> <span>A texting service to monitor the BTC, ETH, and LTC price</span></a>
 	<nav>
 		<a href="#menu">Menu</a>
 	</nav>
@@ -123,7 +124,7 @@
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h1>Rad! Here's your code</h1>
+			<h1>Success</h1>
 		</header>
 		
 		<p><div id="dynamic-content"></div>
@@ -133,11 +134,8 @@
 $( document ).ready(function() {
   $.each(document.location.search.substr(1).split('&'),function(c,q){
       var i = q.split('=');
-      if (decodeURIComponent(i[0].toString()) === 'code') {
-        var code = decodeURIComponent(i[1].toString());
-        $("#one .inner .major h1").text('Rad! Here\'s your code: '+code);
-        $("#dynamic-content").append('<h3>Send a text message with \'add '+code+'\' to (505) 384-7674 </h3>');
-        $("#dynamic-content").append('Please be sure to send this code right away; you\'ll only see this code once');
+      if (decodeURIComponent(i[0].toString()) === 'message') {
+        $("#dynamic-content").append(decodeURIComponent(i[1].toString()));
       }
     });
 });

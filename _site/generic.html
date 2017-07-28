@@ -75,6 +75,8 @@
 		
 		    
 		
+		    
+		
 		
 		    
 		
@@ -93,8 +95,6 @@
 		    
 		
 		    
-		        <li><a href="/get_started.html">Get Started</a></li>
-		    
 		
 		    
 		
@@ -105,7 +105,7 @@
 		    
 		
 		    
-		        <li><a href="/terms.html">Terms and Conditions</a></li>
+		
 		    
 		
 	</ul>
@@ -150,13 +150,15 @@
           <input type="text" name="_replyto" id="email" />
         </div>
         <div class="field">
-          <label for="message">Type Message</label>
+          <label for="message">Message</label>
           <textarea name="message" id="message" rows="6"></textarea>
         </div>
         <ul class="actions">
           <li><input type="submit" value="Send Message" class="special" /></li>
           <li><input type="reset" value="Clear" /></li>
         </ul>
+        <input type="hidden" name="_next" value="/success.html?message=We%20have%20received%20your%20message%20and%20we%27ll%20be%20in%20contact%20with%20you%20shortly" />
+        <input type="text" name="_gotcha" style="display:none" />
       </form>
     </section>
     <section class="split">
@@ -164,7 +166,17 @@
         <div class="contact-method">
           <span class="icon alt fa-envelope"></span>
           <h3>Email</h3>
-          <a href="#">info@cryptck.com</a>
+          <a href="mailto:info@cryptck.com">info@cryptck.com</a>
+        </div>
+        <div class="contact-method">
+          <span class="icon alt fa-twitter"></span>
+          <h3>Twitter</h3>
+          <a href="https://twitter.com/cryptck">@cryptck</a>
+        </div>
+        <div class="contact-method">
+          <span class="icon alt fa-facebook"></span>
+          <h3>Facebook</h3>
+          <a href="https://www.facebook.com/CrypTck/">CrytpTck</a>
         </div>
       </section>
     </section>
@@ -172,6 +184,53 @@
 </section>
 
     <!-- Footer -->
+  <!-- Contact -->
+<section id="contact">
+  <div class="inner">
+    <section>
+      <form action="https://formspree.io/info@cryptck.com" method="POST">
+        <div class="field half first">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="field half">
+          <label for="email">Email</label>
+          <input type="text" name="_replyto" id="email" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="6"></textarea>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" class="special" /></li>
+          <li><input type="reset" value="Clear" /></li>
+        </ul>
+        <input type="hidden" name="_next" value="/success.html?message=We%20have%20received%20your%20message%20and%20we%27ll%20be%20in%20contact%20with%20you%20shortly" />
+        <input type="text" name="_gotcha" style="display:none" />
+      </form>
+    </section>
+    <section class="split">
+      <section>
+        <div class="contact-method">
+          <span class="icon alt fa-envelope"></span>
+          <h3>Email</h3>
+          <a href="mailto:info@cryptck.com">info@cryptck.com</a>
+        </div>
+        <div class="contact-method">
+          <span class="icon alt fa-twitter"></span>
+          <h3>Twitter</h3>
+          <a href="https://twitter.com/cryptck">@cryptck</a>
+        </div>
+        <div class="contact-method">
+          <span class="icon alt fa-facebook"></span>
+          <h3>Facebook</h3>
+          <a href="https://www.facebook.com/CrypTck/">CrytpTck</a>
+        </div>
+      </section>
+    </section>
+  </div>
+</section>
+
 	<footer id="footer">
 		<div class="inner">
 			<ul class="icons">
@@ -179,6 +238,8 @@
 				<li><a href="https://twitter.com/cryptck" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 				
 				
+				
+				<li><a href="https://www.facebook.com/CrypTck/" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 				
 				
 				
@@ -190,6 +251,7 @@
 			</ul>
 			<ul class="copyright">
 				<li>&copy; 2017 Cryptck</li>
+        <li><a href="/terms.html">Terms And Conditions</a></li>
 			</ul>
 		</div>
 	</footer>
