@@ -60,12 +60,10 @@
 		    
 		
 		    
-		
-		    
-		
-		    
 		        <li><a href="/">Home</a></li>
 	    	
+		
+		    
 		
 		    
 		
@@ -85,16 +83,12 @@
 		    
 		
 		    
-		
-		    
 		        <li><a href="/faq.html">FAQ</a></li>
 		    
 		
 		    
 		
 		    
-		        <li><a href="/get_started.html">Get Started</a></li>
-		    
 		
 		    
 		
@@ -104,8 +98,6 @@
 		
 		    
 		
-		    
-		        <li><a href="/terms.html">Terms and Conditions</a></li>
 		    
 		
 	</ul>
@@ -123,30 +115,32 @@
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h1>Tempus</h1>
+			<h1>Success</h1>
 		</header>
-		<span class="image main"><img src="/assets/images/pic02.jpg" alt="" /></span>
-		<p><p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. 
-Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. 
-Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.</p>
+		
+		<p><div id="dynamic-content"></div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. 
-Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. 
-Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. 
-Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+<script>
 
-<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. 
-Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. 
-Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+$( document ).ready(function() {
+  $.each(document.location.search.substr(1).split('&'),function(c,q){
+      var i = q.split('=');
+      if (decodeURIComponent(i[0].toString()) === 'message') {
+        $("#dynamic-content").append(decodeURIComponent(i[1].toString()));
+      }
+    });
+});
+
+</script>
+
 </p>
 	</div>
 </section>
 
 </div>
-	  <!-- Contact -->
+
+    <!-- Footer -->
+  <!-- Contact -->
 <section id="contact">
   <div class="inner">
     <section>
@@ -160,13 +154,15 @@ Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
           <input type="text" name="_replyto" id="email" />
         </div>
         <div class="field">
-          <label for="message">Type Message</label>
+          <label for="message">Message</label>
           <textarea name="message" id="message" rows="6"></textarea>
         </div>
         <ul class="actions">
           <li><input type="submit" value="Send Message" class="special" /></li>
           <li><input type="reset" value="Clear" /></li>
         </ul>
+        <input type="hidden" name="_next" value="/success.html?message=We%20have%20received%20your%20message%20and%20we%27ll%20be%20in%20contact%20with%20you%20shortly" />
+        <input type="text" name="_gotcha" style="display:none" />
       </form>
     </section>
     <section class="split">
@@ -174,14 +170,23 @@ Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
         <div class="contact-method">
           <span class="icon alt fa-envelope"></span>
           <h3>Email</h3>
-          <a href="#">info@cryptck.com</a>
+          <a href="mailto:info@cryptck.com">info@cryptck.com</a>
+        </div>
+        <div class="contact-method">
+          <span class="icon alt fa-twitter"></span>
+          <h3>Twitter</h3>
+          <a href="https://twitter.com/cryptck">@cryptck</a>
+        </div>
+        <div class="contact-method">
+          <span class="icon alt fa-facebook"></span>
+          <h3>Facebook</h3>
+          <a href="https://www.facebook.com/CrypTck/">CrytpTck</a>
         </div>
       </section>
     </section>
   </div>
 </section>
 
-    <!-- Footer -->
 	<footer id="footer">
 		<div class="inner">
 			<ul class="icons">
@@ -189,6 +194,8 @@ Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 				<li><a href="https://twitter.com/cryptck" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
 				
 				
+				
+				<li><a href="https://www.facebook.com/CrypTck/" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 				
 				
 				
@@ -200,6 +207,7 @@ Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 			</ul>
 			<ul class="copyright">
 				<li>&copy; 2017 Cryptck</li>
+        <li><a href="/terms.html">Terms And Conditions</a></li>
 			</ul>
 		</div>
 	</footer>
