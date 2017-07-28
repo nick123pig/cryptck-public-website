@@ -41,17 +41,22 @@
 					'background-color #{_duration(transition)} ease-in-out',
 					'color #{_duration(transition)} ease-in-out'
 				));
-				background-color: _palette(fg-bold);
-				color: _palette(bg);
+				color: #B2FFA9;
 				display: inline-block;
-				line-height: 1.65em;
+				line-height: 1.75em;
 				margin-right: 0.325em;
 				padding: 0 0.125em 0 (_font(letter-spacing-alt) + 0.125em);
+				font-size: 18px;
+			}
+
+			.header-text {
+				padding: 0 .5em;
 			}
 
 			&:hover {
 				strong {
 					background-color: _palette(highlight);
+					color: #242943;
 				}
 			}
 
@@ -138,7 +143,7 @@
 			position: absolute;
 
 			&.style1 { .logo { strong { color: _palette(accent1); } } }
-			&.style2 { .logo { strong { color: _palette(accent2); } } }
+			&.style2 { .logo { strong { color: #B2FFA9; } } }
 			&.style3 { .logo { strong { color: _palette(accent3); } } }
 			&.style4 { .logo { strong { color: _palette(accent4); } } }
 			&.style5 { .logo { strong { color: _palette(accent5); } } }
