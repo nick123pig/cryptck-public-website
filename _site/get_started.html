@@ -175,6 +175,28 @@
           <label for="number">Enter your US phone number</label>
           <input type="tel" name="number" id="number" />
         </div><br /><br />
+
+        <div class="field half first">
+          <label for="cryptocurrencies">Select the currencies you'd like to track:</label>
+          <select multiple="">
+            <option value="btc">Bitcoin (BTC)</option>
+            <option value="eth">Ethereum (ETH)</option>
+            <option value="ltc">Litcoin (LTC)</option>
+          </select>
+        </div><br /><br />
+
+        <div class="field half first">
+          <label for="currency">Which currency would you like to use?</label>
+          <input type="radio" name="currency" value="dollar" />USD &#36;<br />
+          <input type="radio" name="currency" value="euro" />EUR &euro;<br />
+        </div><br /><br />
+
+        <div class="field half first">
+          <label for="interval">Select your alert intervals:</label>
+          <p>for example: if you would like to send a text every time the ETH price swings by &#36;50, set the ETH interval slider to 50</p>
+          
+        </div><br /><br />
+
 					<ul class="actions">
 						<li>By clicking "Start" you agree with our <a href="https://cryptck.com/terms.html" target="_blank">Terms and Conditions</a>.</li><br /><br />
 						<li>
@@ -188,90 +210,6 @@
 </section>
 
 </div>
-
-    <!-- Footer -->
-  <!-- Contact -->
-<section id="contact">
-  <div class="inner">
-    <section>
-      <form action="https://formspree.io/info@cryptck.com" method="POST">
-        <div class="field half first">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" />
-        </div>
-        <div class="field half">
-          <label for="email">Email</label>
-          <input type="text" name="_replyto" id="email" />
-        </div>
-        <div class="field">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="6"></textarea>
-        </div>
-        <ul class="actions">
-          <li><input type="submit" value="Send Message" class="special" /></li>
-          <li><input type="reset" value="Clear" /></li>
-        </ul>
-        <input type="hidden" name="_next" value="/success.html?message=We%20have%20received%20your%20message%20and%20we%27ll%20be%20in%20contact%20with%20you%20shortly" />
-        <input type="text" name="_gotcha" style="display:none" />
-      </form>
-    </section>
-    <section class="split">
-      <section>
-        <div class="contact-method">
-          <span class="icon alt fa-envelope"></span>
-          <h3>Email</h3>
-          <a href="mailto:info@cryptck.com">info@cryptck.com</a>
-        </div>
-        <div class="contact-method">
-          <span class="icon alt fa-twitter"></span>
-          <h3>Twitter</h3>
-          <a href="https://twitter.com/cryptck">@cryptck</a>
-        </div>
-        <div class="contact-method">
-          <span class="icon alt fa-facebook"></span>
-          <h3>Facebook</h3>
-          <a href="https://www.facebook.com/CrypTck/">CrytpTck</a>
-        </div>
-      </section>
-    </section>
-  </div>
-</section>
-
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				
-				<li><a href="https://twitter.com/cryptck" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-				
-				
-				
-				<li><a href="https://www.facebook.com/CrypTck/" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-				
-				
-				
-				
-				
-				
-				
-				
-			</ul>
-			<ul class="copyright">
-				<li>&copy; 2017 Cryptck</li>
-        <li><a href="/terms.html">Terms And Conditions</a></li>
-			</ul>
-		</div>
-	</footer>
-
-</div>
-
-<!-- Scripts -->
-	<script src="/assets/js/jquery.min.js"></script>
-	<script src="/assets/js/jquery.scrolly.min.js"></script>
-	<script src="/assets/js/jquery.scrollex.min.js"></script>
-	<script src="/assets/js/skel.min.js"></script>
-	<script src="/assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="/assets/js/main.js"></script>
 
 
 </body>

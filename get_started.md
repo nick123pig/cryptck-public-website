@@ -1,6 +1,6 @@
 ---
 title: Get Started
-layout: landing
+layout: get_started_landing
 description: Sign up today to step away from the charts. All we need to get you started is your phone number.
 ---
 
@@ -55,6 +55,28 @@ description: Sign up today to step away from the charts. All we need to get you 
           <label for="number">Enter your US phone number</label>
           <input type="tel" name="number" id="number">
         </div><br><br>
+
+        <div class="field half first">
+          <label for="cryptocurrencies">Select the currencies you'd like to track:</label>
+          <select multiple>
+            <option value="btc">Bitcoin (BTC)</option>
+            <option value="eth">Ethereum (ETH)</option>
+            <option value="ltc">Litcoin (LTC)</option>
+          </select>
+        </div><br><br>
+
+        <div class="field half first">
+          <label for="currency">Which currency would you like to use?</label>
+          <input type="radio" name="currency" value="dollar">USD &#36;<br>
+          <input type="radio" name="currency" value="euro">EUR &euro;<br>
+        </div><br><br>
+
+        <div class="field half first">
+          <label for="interval">Select your alert intervals:</label>
+          <p>for example: if you would like to send a text every time the ETH price swings by &#36;50, set the ETH interval slider to 50</p>
+          
+        </div><br><br>
+
 					<ul class="actions">
 						<li>By clicking "Start" you agree with our <a href="https://cryptck.com/terms.html" target="_blank">Terms and Conditions</a>.</li><br><br>
 						<li>
