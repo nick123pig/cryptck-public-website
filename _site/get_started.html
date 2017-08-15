@@ -168,7 +168,7 @@
 <section id="three">
 	<div class="inner">
 		<header class="major">
-			<h2>Join CrypTck</h2>
+			<h2 class="accent">Join CrypTck</h2>
 		</header>
 			<form action="https://api.cryptck.com/production/web/inbound" method="POST" id="phoneForm">
         <div class="field half first">
@@ -177,30 +177,53 @@
         </div><br /><br />
 
         <div class="field half first">
-          <label for="cryptocurrencies">Select the currencies you'd like to track:</label>
-          <select multiple="">
-            <option value="btc">Bitcoin (BTC)</option>
-            <option value="eth">Ethereum (ETH)</option>
-            <option value="ltc">Litcoin (LTC)</option>
-          </select>
+          <label for="cryptocurrencies">Select the CryptoCurrencies you'd like to track:</label>
+          <div>
+            <span class="crypto-radio">BTC Bitcoin</span>
+            <span class="crypto-radio">ETC Ethereum</span>
+            <span class="crypto-radio">LTCLitecoin</span>
+          </div>
         </div><br /><br />
 
         <div class="field half first">
-          <label for="currency">Which currency would you like to use?</label>
-          <input type="radio" name="currency" value="dollar" />USD &#36;<br />
-          <input type="radio" name="currency" value="euro" />EUR &euro;<br />
+          <label for="currency">Which currency would you like to track with?</label>
+          <div>
+            <input type="radio" name="currency" /> &#36; US Dollars<br />
+            <input type="radio" name="currency" />&euro; Euros<br />
+          </div>
         </div><br /><br />
 
         <div class="field half first">
-          <label for="interval">Select your alert intervals:</label>
-          <p>for example: if you would like to send a text every time the ETH price swings by &#36;50, set the ETH interval slider to 50</p>
-          
+          <label for="interval">Set your alert interval ranges:</label>
+          <p class="helper-text"><i>e.g., if you would like to receive an alert when the price of ETH moves up or down by &#36;50, set the ETH interval slider to '50'</i></p>
+
+          <!--BTC Slider-->
+            <div class="range-slider">
+              <span class="accent">BTC:</span>
+              <input class="range-slider__range" type="range" min="1" max="1500" />
+              <span class="range-slider__value">1</span>
+            </div>
+
+            <!--ETH Slider-->
+              <div class="range-slider">
+                <span class="accent">ETH:</span>
+                <input class="range-slider__range" type="range" min="1" max="1000" />
+                <span class="range-slider__value">1</span>
+              </div>
+
+              <!--LTC Slider-->
+                <div class="range-slider">
+                  <span class="accent">LTC:</span>
+                  <input class="range-slider__range" type="range" min="1" max="500" />
+                  <span class="range-slider__value">1</span>
+                </div>
+
         </div><br /><br />
 
 					<ul class="actions">
 						<li>By clicking "Start" you agree with our <a href="https://cryptck.com/terms.html" target="_blank">Terms and Conditions</a>.</li><br /><br />
 						<li>
-						<button class="special g-recaptcha" data-sitekey="6Lc59yMUAAAAAJiwYDYK7BPx3RHsD5dTEdF2xe9f" data-callback="onPhoneFormSubmit">
+						<button class="primary special g-recaptcha" data-sitekey="6Lc59yMUAAAAAJiwYDYK7BPx3RHsD5dTEdF2xe9f" data-callback="onPhoneFormSubmit">
 						Start
 						</button>
 						</li>
